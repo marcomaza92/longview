@@ -1,4 +1,4 @@
-import styles from './Display.module.css';
+import styles from './Display.module.scss';
 
 function Display() {
   return (

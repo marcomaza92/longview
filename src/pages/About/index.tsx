@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './About.module.css';
+import styles from './About.module.scss';
 
 function About() {
   return (
