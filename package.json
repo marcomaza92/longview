@@ -24,7 +24,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jest": "^24.1.5",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^5.1.1",
+    "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
@@ -44,16 +44,16 @@
     "format": "prettier --write ./src",
     "lint": "eslint ./src && stylelint ./src"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,scss}": [
-      "prettier --write",
-      "eslint --fix && stylelint --fix"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,scss}": [
+      "npm run format --",
+      "npm run lint -- --fix"
+    ]
   },
   "browserslist": {
     "production": [
