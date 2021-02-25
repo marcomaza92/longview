@@ -46,8 +46,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,scss}": [
-      "npm run format",
-      "npm run lint -- --fix"
+      "prettier --write",
+      "eslint ./src --fix && stylelint ./src --fix"
     ]
   },
   "husky": {
