@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -14,10 +10,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path='/about'>
+        <Route path="/about">
           <About />
         </Route>
-        <Route path='/'>
+        <Route path="/">
           <Home />
         </Route>
       </Switch>
