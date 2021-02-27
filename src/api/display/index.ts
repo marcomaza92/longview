@@ -1,6 +1,6 @@
 import { BaseUrl, DataUrl } from '../common';
 
-export const DisplayData = async () => {
+export const displayMovies = async () => {
   try {
     const response = await fetch(`${BaseUrl}${DataUrl}`, {
       method: 'GET',
