@@ -33,7 +33,7 @@ function Display(): ReactElement {
   return (
     <section className={styles.main}>
       {video?.sources.length === 0 ? (
-        <h2 className={styles.placeholder}>
+        <h2 className={styles.placeholder} data-testid="placeholder">
           Select a video to start watching!
         </h2>
       ) : (

@@ -11,7 +11,7 @@ function Header(): ReactElement {
         <Link to="/about">About</Link>
       </nav>
       <div className={styles.title}>
-        <h1>Longview</h1>
+        <h1 data-testid="title">Longview</h1>
       </div>
       <div className={styles.switch}>
         <Toggler />

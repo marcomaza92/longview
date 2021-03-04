@@ -7,7 +7,7 @@ import styles from './Toggler.module.scss';
 function Toggler(): ReactElement {
   const { options, setOptions } = useContext(ThemeContext);
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main} ${options.mode}`} data-testid="toggler">
       <IconButton
         onClick={() =>
           setOptions({

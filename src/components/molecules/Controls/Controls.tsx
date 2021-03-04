@@ -29,7 +29,7 @@ function Controls(): ReactElement {
   return (
     <section className={`${styles.main}`}>
       {query.isLoading ? (
-        <div className={styles.loader}>
+        <div className={styles.loader} data-testid="loader">
           <CircularProgress />
         </div>
       ) : (

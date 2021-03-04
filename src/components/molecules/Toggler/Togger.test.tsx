@@ -3,6 +3,6 @@ import Toggler from './Toggler';
 
 test('renders the main title', () => {
   render(<Toggler />);
-  const title = screen.getByText(/Toggler/i);
-  expect(title).toBeInTheDocument();
+  const mode = screen.getByTestId('toggler').classList.contains('dark');
+  expect(mode).toBe(true);
 });
