@@ -1,9 +1,6 @@
-.dark {
-  color: #CCCCCC;
-  background: #222222;
-}
-
-.light {
-  color: #222222;
-  background: #CCCCCC;
+.content {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
 }

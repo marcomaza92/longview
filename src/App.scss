@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary: #47A8BD;
+  --accent: #F5E663;
+  --dark: #39394D;
+  --light: #FEFEFE;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 0.5fr minmax(60vh, auto) 0.25fr;
+  height: 100vh;
+}
+
+.dark {
+  color: var(--light);
+  transition: color 0.25s ease-in-out;
+  a {
+    color: var(--light);
+    transition: color 0.25s ease-in-out;
+  }
+
+  .isCurrent {
+    color: var(--accent);
+    transition: color 0.25s ease-in-out;
+  }
+
+  .isNotCurrent {
+    color: var(--light);
+    transition: color 0.25s ease-in-out;
+  }
+
+  div,
+  main,
+  section,
+  nav,
+  footer,
+  header {
+    background: var(--dark);
+    transition: background 0.25s ease-in-out;
+  }
+}
+
+.light {
+  color: var(--primary);
+  transition: color 0.25s ease-in-out;
+  a {
+    color: var(--primary);
+    transition: color 0.25s ease-in-out;
+  }
+
+  .isCurrent {
+    color: var(--primary);
+    transition: color 0.25s ease-in-out;
+  }
+
+  .isNotCurrent {
+    color: var(--dark);
+    transition: color 0.25s ease-in-out;
+  }
+
+  div,
+  main,
+  section,
+  nav,
+  footer,
+  header {
+    background: var(--light);
+    transition: background 0.25s ease-in-out;
+  }
+}

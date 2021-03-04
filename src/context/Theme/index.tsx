@@ -1,5 +1,31 @@
-import { createContext } from 'react';
+import { createContext, ReactElement, useState } from 'react';
 
-export const ThemeContext = createContext('light');
+const initialOptions = {
+  mode: 'dark',
+  direction: 'ltr',
+};
 
-export const ThemeProvider = ThemeContext.Provider;
+export const ThemeContext = createContext({
+  options: initialOptions,
+  setOptions: (initialOptions) => initialOptions,
+});
+
+interface ThemeProviderProps {
+  children: ReactElement;
+}
+
+const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+  const [options, setOptions] = useState(initialOptions);
+  return (
+    <ThemeContext.Provider
+      value={{
+        options,
+        setOptions,
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+export default ThemeProvider;

@@ -1,10 +1,11 @@
+import { ReactElement } from 'react';
 import styles from './Footer.module.scss';
 
-function Footer() {
+function Footer(): ReactElement {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer className={styles.main}>
+      <p>Longview - Visual control of the future</p>
+    </footer>
   );
 }
 

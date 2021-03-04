@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import App from './App';
+import ThemeProvider from './context/Theme';
+import VideoProvider from './context/Video';
+import CategoryProvider from './context/Category';
+import QueryProvider from './context/Query';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <QueryProvider>
+    <ThemeProvider>
+      <CategoryProvider>
+        <VideoProvider>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+        </VideoProvider>
+      </CategoryProvider>
+    </ThemeProvider>
+  </QueryProvider>,
   document.getElementById('root')
 );
 

@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { ReactElement, useContext } from 'react';
 import './App.scss';
 import Header from './components/organisms/Header';
 import Footer from './components/organisms/Footer';
-import { ThemeProvider } from './context/Theme';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
+import { ThemeContext } from './context/Theme';
 
-function App() {
+function App(): ReactElement {
+  const { options } = useContext(ThemeContext);
   return (
-    <ThemeProvider value={'light'}>
+    <div className={`content ${options.mode}`}>
       <Router>
         <Header />
         <Switch>
@@ -22,7 +23,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </ThemeProvider>
+    </div>
   );
 }
 

@@ -1,3 +1,30 @@
 .main {
-  color: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
 }

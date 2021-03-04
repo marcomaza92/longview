@@ -1,0 +1,45 @@
+.main {
+  width: 30%;
+  min-height: 60vh;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.videoList {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+.videoList button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card img {
+  width: 40%;
+}
+
+.controls {
+  position: absolute;
+  left: 0;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  width: calc(70% - 4rem);
+  padding: 0 2rem;
+}
+
+.volume,
+.brightness,
+.contrast {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
