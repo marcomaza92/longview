@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Longview - Visual control of the future
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
 
-## Available Scripts
+Longview is a video player that allows you to consume a list of videos from an API.
 
-In the project directory, you can run:
+It comes with all the standard media controls and some advanced controls that let you tweak the brightness and contrast.
 
-### `npm start`
+## Install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone this repository and install the dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm i
+```
 
-### `npm test`
+Start the dev server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm start
+```
 
-### `npm run build`
+### Available commands
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm run lint`: runs ESLint and Stylelint in the entire code base
+- `npm run format`: runs Prettier in the entire code base
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- create-react-app
+- React Router
+- React Query
+- React Context API
+- React Hooks
+- Typescript
+- Jest
+- SCSS Modules
+- Material UI
+- ESLint
+- Stylelint
+- Husky
+- Prettier
 
-### `npm run eject`
+## Functionalities
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Main
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Communicate components with any state manager
+- Create a video player with `play/pause` and `volume` control
+- Use and API endpoint to fetch the data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Enhancements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Add `next`, `previous`, `brigthness` and `contrast` controls
+- Add `currentVideo` state to reflect in the UI
+- Add `theme` and its toggler
+- Add `Typescript` for safe typing and data handling
+- Add `Atomic Design` convention to the code base
+- Implement `React Query` to fetch with Context API
+- Implement `React Router` so we can add pages in the future
+- Implement `React Hooks` for better adaptability with functional components
+- Implement `Sass` and `SCSS Modules` for better styling
+- Implement native `CSS Grid` and `CSS Flexbox`
+- Add `Material UI` to speed up component creation
+- Add `ESLint` and `Stylelint` for better and concise code styling
+- Add `Prettier` for faster DX
+- Implement `Husky` and Git Hooks for safer commits
+- Implement `Jest` for better coverage
 
-## Learn More
+## To-Do
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Add responsiveness to all the application
+- [ ] Add better coverage to all the application
+- [ ] Add state management for multiple `categories`
